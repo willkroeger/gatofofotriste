@@ -22,9 +22,7 @@ const mensagemJanela = [
     "Apesar de tudo, as coisas ainda são as mesmas."
 ]
 
-const imgGatoFofoTriste = '../imgs/gatofofotriste.png';
-const imgChapeuBobo = '../imgs/gato_chapeu_bobo.png';
-const ChapeuBobo = '../imgs/chapeu_bobo.png';
+const imgGatoFofoTriste = 'imgs/gatofofotriste.png';
 
 const canvas = document.getElementById("canvas");
 const startScreen = document.getElementById("start-screen");
