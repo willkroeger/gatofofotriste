@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <title>Tamagotchi</title>
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="canvas">
+            <div id="start-screen">
+                <h1>gato-fofo-triste</h1>
+                <button onclick="iniciar()">iniciar</button>
+                <button onclick="comoJogar()">como jogar</button>
+            </div>
+            <div id="UI">
+                <div id="timer"></div>
+                <div id="status">
+                    <span id="status-span"></span><div id="happiness" class="progresso"></div>
+                </div>
+            </div>
+            <div id="container">
+                <img id="janela" src="imgs/janela.png" onclick="abrirMensagem()" draggable="false" alt="Imagem de uma janela">
+                <div id="caixa-texto" onclick="fecharMensagem()"></div>
+                
+                <img id="armario" src="imgs/armario.png" onclick="abrirArmario()" draggable="false" alt="Imagem de um armario">
+                <div id="caixa-armario">
+                    <h3>escolha um chapéu</h3>
+                    <div class="chapeu-painel">
+                        <img id="chapeu-bobo" class="chapeu-opcao" src="imgs/chapeu_bobo.png" onclick="mudarChapeu('../imgs/gato_chapeu_bobo.png')" onmouseover="previewChapeu('../imgs/gato_chapeu_bobo.png')" onmouseout="endPreview()"></img>
+                    </div>
+                    <button onclick="fecharArmario()">Fechar</button>
+                </div>
+
+                <img id="tamagotchi" src="imgs/gatofofotriste.png" draggable="false" alt="Imagem de um gato pequeno triste">                
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
